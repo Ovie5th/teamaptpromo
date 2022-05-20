@@ -5,6 +5,7 @@ import Content from './components/textcontent/Content';
 import { fadeInUp } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
 import img from "./images/background.jpeg"
+import LightBurst from './components/lightspin/LightBurst';
 require('typeface-poppins');
 require('typeface-inter');
 
@@ -15,6 +16,7 @@ function App() {
         <Nav />
         <Content />
         <Bottom />
+        <LightBurst/>
       </FadeDiv> 
     </Wrapper>
      
@@ -37,4 +39,6 @@ const FadeDiv = styled.div`
 
 const Wrapper = styled.main`
  background-image: url(${img});
+ overflow: hidden;
+ overflow: clip;
 `

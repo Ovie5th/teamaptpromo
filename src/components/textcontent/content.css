@@ -12,6 +12,7 @@
   background-size: contain;
   width: 78%;
   margin-bottom: 20px;
+  z-index: 7;
 }
 
 .topContent {
@@ -42,6 +43,7 @@
 }
 
 .bottomContent {
+  z-index: 7;
   width: 425px;
   height: 257px;
   display: flex;
@@ -90,6 +92,9 @@ ol {
 }
 
 @media screen and (max-width: 450px) {
+  .allContent {
+  background-size:contain;
+}
   .topContent {
     font-size: 40px;
     line-height: 40.8px;
@@ -113,12 +118,12 @@ ol {
   }
   .bottomInnerContent,
   .topHowto {
-    width: 80%;
+    width: 85%;
   }
   ol {
-    padding-left: 10px;
+    padding-left: 15px;
     text-align: left;
     font-size: 14px;
-    border: 1px solid red;
   }
+
 }

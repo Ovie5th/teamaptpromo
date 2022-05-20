@@ -60,6 +60,7 @@ to { -moz-transform: rotate(20deg); }
   width: 225px;
   font-family: "Inter";
   font-weight: 600;
+  z-index: 3;
 }
 .goldDiv {
    width: 100%;
@@ -94,11 +95,28 @@ to { -moz-transform: rotate(20deg); }
 }
 
 .goldLight {
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  /* animation: rotatemove 5.1s infinite linear; */
+  left: 0;
+  transform-origin: bottom center;
+  /* transform: translate(-50%, 0); */
+  animation: rotatemove 5.1s infinite linear;
+  animation-fill-mode: both;
+  animation-direction: alternate-reverse;
+  /* border: 1px solid red; */
+  /* width: 700px;
+  height: 500px; */
+}
+
+.goldLight2 {
+  position: fixed;
+  bottom: 0;
+  left: 2%;
+  transform-origin: bottom center;
+  /* transform: translate(-50%, 0); */
+  animation: rotatemove 5.1s infinite linear;
+  animation-fill-mode: both;
+  animation-direction: alternate-reverse;
   /* border: 1px solid red; */
   /* width: 700px;
   height: 500px; */
@@ -136,6 +154,9 @@ to { -moz-transform: rotate(20deg); }
   right: 10%;
   bottom: 5%;
 }
+.star4{
+
+}
 /* #grad {
   position: relative;
   border-radius: 50%;
@@ -159,6 +180,20 @@ to { -moz-transform: rotate(20deg); }
   left: 50%;
   transform: rotate(180deg);
 } */
+
+
+#grad {
+  margin: 0 auto;
+   animation: rotatemove 35.1s infinite linear; 
+  bottom: 0;
+  left: 0;
+  position: fixed
+  ;
+  /* transform-origin: bottom center; */
+  /* transform: translate(-50%, 0); */
+  /* animation: rotatemove 5.1s infinite linear; */
+  /* animation-fill-mode: both; */
+}
 
 @media screen and (max-width: 450px) {
   .goldLight{
