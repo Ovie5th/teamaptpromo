@@ -3,6 +3,7 @@ import Bulb from "../../images/bulb.png"
 import { fadeInUp } from "react-animations";
 import styled, { keyframes } from "styled-components";
 import "./content.css"
+import Button from '../button/Button';
 export default function Content() {
   return (
     <main className="allContent">
@@ -39,6 +40,7 @@ export default function Content() {
           </p>
         </div>
       </FadeIn>
+      <Button/>
     </main>
   );
 }

@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import "./light.css"
+import React from "react";
+import styled from "styled-components";
+import "./light.css";
 
 export default function LightBurst() {
   return (
@@ -18,91 +18,68 @@ export default function LightBurst() {
   );
 }
 
-
 const Ray = styled.div`
-  transform: translateX(180deg);
-  width: 200px;
-  height: 1050px;
-  clip-path: polygon(0 0, 100% 0, 75% 100%, 31% 100%);
-  /* clip-path: polygon(35% 0, 67% 1%, 100% 100%, 0 98%); */
+  width: 400px;
+  height: 700px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-origin: center bottom;
+  clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
   background-image: linear-gradient(
     180.68deg,
-    rgba(255, 229, 0, 0.5) -1.18%,
-    rgba(255, 230, 9, 0.435) 3.33%,
-    rgba(255, 231, 23, 0.335) 10.55%,
-    rgba(255, 233, 36, 0.245) 17.77%,
-    rgba(255, 234, 47, 0.17) 25.89%,
-    rgba(255, 234, 56, 0.11) 34.01%,
-    rgba(255, 235, 62, 0.06) 42.13%,
-    rgba(255, 236, 67, 0.025) 51.15%,
-    rgba(255, 236, 70, 0.005) 60.17%,
-    rgba(255, 236, 71, 0) 71.89%
+    rgba(255, 229, 0, 0) -1.18%,
+    rgba(255, 230, 9, 0) 3.33%,
+    rgba(255, 231, 23, 0.003) 10.55%,
+    rgba(255, 233, 36, 0.005) 17.77%,
+    rgba(255, 234, 47, 0.009) 25.89%,
+    rgba(255, 234, 56, 0.03) 34.01%,
+    rgba(255, 235, 62, 0.05) 42.13%,
+    rgba(255, 236, 67, 0.09) 51.15%,
+    rgba(255, 236, 70, 0.12) 60.17%,
+    rgba(255, 236, 71, 0.2) 71.89%
   );
-/* 
-  background: linear-gradient(
-    180.87deg,
-    rgba(255, 236, 71, 0) -1.18%,
-    rgba(255, 236, 70, 0.005) 3.33%,
-    rgba(255, 236, 67, 0.025) 10.55%,
-    rgba(255, 235, 62, 0.06) 17.77%,
-    rgba(255, 234, 56, 0.11) 25.89%,
-    rgba(255, 234, 47, 0.17) 34.01%,
-    rgba(255, 233, 36, 0.245) 42.13%,
-    rgba(255, 231, 23, 0.335) 51.15%,
-    rgba(255, 230, 9, 0.435) 60.17%,
-    rgba(255, 229, 0, 0.5) 71.89%
-  ); */
-`; 
+  // linear-gradient( 180.68deg, rgba(255,229,0,0) -1.18%, rgba(255,230,9,0.005) 3.33%, rgba(255,231,23,0.025) 10.55%, rgba(255,233,36,0.06) 17.77%, rgba(255,234,47,0.11) 25.89%, rgba(255,234,56,0.17) 34.01%, rgba(255,235,62,0.245) 42.13%, rgba(255,236,67,0.335) 51.15%, rgba(255,236,70,0.435) 60.17%, rgba(255,236,71,0.5) 71.89% );
+`;
 
 const Wrapper = styled.div`
-    z-index: 0;
+  z-index: 0;
   position: relative;
-  bottom: -27%;
-  width: 600px;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: rotatemove 45.1s infinite linear;
+  width: 200px;
+  height: 100%;
+  bottom: 0;
+  transform-origin: center bottom;
+  animation: rotatemove 45.1s infinite reverse linear;
 `;
 
 const RayOne = styled(Ray)`
-  transform: rotate(0deg);
-  position: absolute;
+  transform: translateX(-50%) rotate(0deg);
 `;
 const Raytwo = styled(Ray)`
-  transform: rotate(40deg);
-  position: absolute;
+  transform: translateX(-50%) rotate(40deg);
 `;
 
 const Raythree = styled(Ray)`
-  transform: rotate(80deg);
-  position: absolute;
+  transform: translateX(-50%) rotate(80deg);
 `;
 
 const Rayfour = styled(Ray)`
-  transform: rotate(120deg);
-  position: absolute;
+  transform: translateX(-50%) rotate(120deg);
 `;
 
 const Rayfive = styled(Ray)`
-  transform: rotate(160deg);
-  position: absolute;
+  transform: translateX(-50%) rotate(160deg);
 `;
 
 const Raysix = styled(Ray)`
-  transform: rotate(200deg);
-  position: absolute;
+  transform: translateX(-50%) rotate(200deg);
 `;
 const RaySeven = styled(Ray)`
-  transform: rotate(240deg);
-  position: absolute;
+  transform: translateX(-50%) rotate(240deg);
 `;
 const RayEight = styled(Ray)`
-  transform: rotate(280deg);
-  position: absolute;
+  transform: translateX(-50%) rotate(280deg);
 `;
 const RayNine = styled(Ray)`
-  transform: rotate(320deg);
-  position: absolute;
+  transform: translateX(-50%) rotate(320deg);
 `;

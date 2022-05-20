@@ -1,11 +1,11 @@
-import './App.css';
+import styled, { keyframes } from 'styled-components';
+import { fadeInUp } from 'react-animations';
 import Bottom from './components/bottomContent/Bottom';
 import Nav from './components/Navbar/Nav';
 import Content from './components/textcontent/Content';
-import { fadeInUp } from 'react-animations';
-import styled, { keyframes } from 'styled-components';
 import img from "./images/background.jpeg"
 import LightBurst from './components/lightspin/LightBurst';
+import './App.css';
 require('typeface-poppins');
 require('typeface-inter');
 
