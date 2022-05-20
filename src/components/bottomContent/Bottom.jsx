@@ -1,12 +1,11 @@
 import React from "react";
-import stroke from "../../images/buttonstroke.png";
 import gold from "../../images/gold.png";
 import coinleft from "../../images/coinleft.png";
 import coinright from "../../images/coinright.png";
 import star1 from "../../images/star1.png";
 import star2 from "../../images/star2.png";
 import star3 from "../../images/star3.png";
-import { fadeInUp, fadeOutUpBig } from "react-animations";
+import { fadeOutUpBig } from "react-animations";
 import styled, { keyframes } from "styled-components";
 import "./bottom.css";
 
@@ -29,13 +28,7 @@ export default function Bottom() {
 }
 
 
-const FadeAnimation = keyframes`${fadeInUp}`;
 const FadeOutAnimation = keyframes`${fadeOutUpBig}`;
-
-
-const FadeDiv = styled.div`
-  animation: 2s ${FadeAnimation};
-`;
 
 const ShootingStars = styled.img`
   animation: 20s ${FadeOutAnimation};
