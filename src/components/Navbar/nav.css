@@ -1,0 +1,55 @@
+.navbar{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.backgLogo{
+    background-color: #9B51E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 14px;
+    border: 10px solid #2d2d47;
+;
+}
+
+.rightnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.text > p {
+    padding: 0;
+    margin: 0;
+    
+    font-family: 'Inter';
+}
+
+.text1 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.text2 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #a0a0ad;
+}
+
+.leftlogo {
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+      border-radius: 14px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(135deg, #05C2FF 7.9%, #0357EE 92.12%);
+}

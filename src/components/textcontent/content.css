@@ -1,0 +1,124 @@
+* {
+  color: #ffffff;
+}
+
+.allContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-image: url("../../images/topstars.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 78%;
+  margin-bottom: 20px;
+}
+
+.topContent {
+  font-size: 70px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-style: normal;
+  line-height: 63.7px;
+}
+
+.topContent > span {
+  display: block;
+  font-weight: 700;
+}
+
+.midContent {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Inter";
+  line-height: 32.82px;
+  font-weight: 400;
+}
+
+.midContent > span {
+  display: block;
+}
+
+.bottomContent {
+  width: 425px;
+  height: 257px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 400;
+  gap: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.39) -213.5%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: inset 0px -1px 11px rgba(255, 255, 255, 0.17),
+    inset 0px 2px 0px rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+}
+
+.bottomInnerContent {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 0 15px;
+  line-height: 19.2px;
+}
+
+.smallText {
+  font-size: 12px;
+}
+
+.midText {
+  font-size: 14px;
+  padding: 0;
+  text-align: left;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 450px) {
+  .topContent {
+    font-size: 40px;
+    line-height: 40.8px;
+  }
+
+  .topContent > span {
+    display: inline;
+  }
+  .midContent {
+    font-size: 16px;
+    line-height: 20.88px;
+  }
+
+  .midContent > span {
+    display: inline;
+  }
+  .bottomContent {
+    width: 90vw;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .bottomInnerContent,
+  .topHowto {
+    width: 80%;
+  }
+  ol {
+    padding-left: 10px;
+    text-align: left;
+    font-size: 14px;
+    border: 1px solid red;
+  }
+}
