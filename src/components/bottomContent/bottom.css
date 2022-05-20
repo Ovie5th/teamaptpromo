@@ -21,6 +21,67 @@
     bottom: 0%;
   }
 }
+
+@keyframes shootingStar1 {
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    right: 53%;
+    bottom: 20%;
+  }
+  100% {
+    right: 51%;
+    bottom: 37%;
+    display: none;
+  }
+}
+
+@keyframes shootingStar2 {
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    right: 55%;
+    bottom: 23%;
+  }
+  100% {
+    right: 59%;
+    bottom: 45%;
+    display: none;
+  }
+}
+
+@keyframes shootingStar3 {
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    right: 45%;
+    bottom: 25%;
+  }
+  100% {
+    right: 40%;
+    bottom: 40%;
+    display: none;
+  }
+}
+
+@keyframes shootingStar4 {
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    right: 40%;
+    bottom: 25%;
+  }
+  100% {
+    right: 35%;
+    bottom: 50%;
+    display: none;
+  }
+}
+
 @keyframes rotatemove {
  from {
     transform: rotate(0deg);
@@ -78,6 +139,27 @@
   right: 10%;
   bottom: 5%;
 }
+.shootingstar {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+ 
+}
+.one {
+ animation: shootingStar1 10s infinite ease-out;
+}
+
+.two {
+ animation: shootingStar2 7s infinite ease-out;
+}
+.three {
+ animation: shootingStar3 8s infinite ease-out;
+}
+.four {
+ animation: shootingStar4 9s infinite ease-out;
+}
+
+
 
 @media screen and (max-width: 450px) {
   .goldLight{
