@@ -39,7 +39,6 @@ const Ray = styled.div`
     rgba(255, 236, 70, 0.12) 60.17%,
     rgba(255, 236, 71, 0.2) 71.89%
   );
-
 `;
 
 const Wrapper = styled.div`

@@ -95,6 +95,7 @@
    width: 100%;
   height: 100%;
   margin: 0;
+  bottom: 0;
   z-index: 4;
 }
 .goldPot {
@@ -104,6 +105,7 @@
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 2;
+   transform-origin: center bottom;
 }
 
 .leftCoin {
@@ -162,21 +164,13 @@
 
 
 @media screen and (max-width: 450px) {
-  .goldLight{
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-  }
   .goldPot {
     width: 100vw;
   }
-  .goldcoinLeft {
- 
+  .leftCoin {
   left: 10%;
-
-
-}
-.goldcoinRight {
+  }
+  .rightCoin {
   left: 85%;
-}
+  }
 }
