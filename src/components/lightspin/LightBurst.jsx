@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import "./light.css";
 
 export default function LightBurst() {
@@ -17,6 +17,15 @@ export default function LightBurst() {
     </Wrapper>
   );
 }
+
+const rotate = keyframes`
+ from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+`;
 
 const Ray = styled.div`
   width: 400px;
@@ -48,7 +57,7 @@ const Wrapper = styled.div`
   height: 100%;
   bottom: 0;
   transform-origin: center bottom;
-  animation: rotatemove 45.1s infinite reverse linear;
+  animation: ${rotate} 45.1s infinite reverse linear;
 `;
 
 const RayOne = styled(Ray)`
